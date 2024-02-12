@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -31,6 +32,7 @@ public class Main {
             } else {
                 System.out.println("a, b и c являются сторонами обычного треугольника");
             }
+            scanner.close();
         // Обработка ошибки
         } catch (InputMismatchException e) {
             System.err.println("Ошибка: " + e);
